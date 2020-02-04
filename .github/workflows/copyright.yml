@@ -17,3 +17,9 @@ jobs:
           import os
           print(os.environ['PATH'])
         shell: python
+      - name: Display the path
+        run: |
+          echo $PATH
+          ls -all
+        shell: bash
+
