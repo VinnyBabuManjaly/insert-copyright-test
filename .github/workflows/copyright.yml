@@ -1,0 +1,19 @@
+name: Copyright
+on: [push]
+jobs:
+  lint:
+    name: Copyright
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Set up Python 3.7
+       # uses: actions/setup-python@v1
+       # with:
+       #   python-version: "3.7"
+      - uses: actions/checkout@v2
+      - name: Runs action to insert copyright
+        uses: VinnyBabuManjaly/insert-copyright-action@test_branch
+      - name: Display the path
+        run: |
+          import os
+          print(os.environ['PATH'])
+        shell: python
