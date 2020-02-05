@@ -5,10 +5,10 @@ jobs:
     name: Copyright
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v1
-        with:
-          python-version: "3.7"
+      #- name: Set up Python 3.7
+      #  uses: actions/setup-python@v1
+      #  with:
+      #    python-version: "3.7"
       - uses: actions/checkout@v2
       - name: Runs action to insert copyright
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
@@ -21,6 +21,8 @@ jobs:
         run: |
           echo $PATH
           ls -all
+          cat test/test_file_b.txt
+          cat test/test_file_a.txt
       #  python copyright_insert.py
         shell: bash
 
