@@ -1,28 +1,20 @@
-name: Copyright
+name: Insert Copyright to required files
 on: [push]
 jobs:
   lint:
     name: Copyright
     runs-on: ubuntu-latest
     steps:
-      #- name: Set up Python 3.7
-      #  uses: actions/setup-python@v1
-      #  with:
-      #    python-version: "3.7"
+      # Checking out the repository which is to be actioned
       - uses: actions/checkout@v2
+      # Implementing action on repository
       - name: Runs action to insert copyright
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
+      # Displaying output file contents
       - name: Display the path
         run: |
-          import os
-          print(os.environ['PATH'])
-        shell: python
-      - name: Display the path
-        run: |
-          echo $PATH
           ls -all
           cat test/test_file_b.txt
           cat test/test_file_a.txt
-      #  python copyright_insert.py
         shell: bash
 
