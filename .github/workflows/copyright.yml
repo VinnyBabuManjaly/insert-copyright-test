@@ -21,6 +21,6 @@ jobs:
         run: |
           echo $PATH
           ls -all
-          python copyright_insert.py
+      #  python copyright_insert.py
         shell: bash
 
