@@ -14,6 +14,7 @@ jobs:
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
       - name: Display the path
         run: |
+          copyright_insert.py
           import os
           print(os.environ['PATH'])
         shell: python
