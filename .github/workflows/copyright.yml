@@ -12,7 +12,7 @@ jobs:
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
         with:
           CopyrightString: 'copyright check\n'
-          FilePath: 'test'
+          FilePath: 'check'
           FileType: '[".py", ".txt"]'
       # Displaying output file contents
       - name: Display the path
