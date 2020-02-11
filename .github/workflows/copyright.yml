@@ -21,13 +21,17 @@ jobs:
           cat check/test_file_b.txt
           cat check/test_file_a.txt
         shell: bash
-      - name: Commit and push files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Add changes"
-          git checkout -b test_branch_a
-          git push origin test_branch_a
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Commit and push files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add .
+      #     git commit -m "Add changes"
+      #     git checkout -b test_branch_a
+      #     git push origin test_branch_a
       #   git checkout -b test_branch_a
        
