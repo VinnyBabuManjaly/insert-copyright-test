@@ -11,7 +11,7 @@ jobs:
       - name: Runs action to insert copyright
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
         with:
-          CopyrightString: 'copyright check\n'
+          CopyrightString: 'copyright check to be added\ncopyright check to be added\n'
           FilePath: 'test'
           FileType: '[".py", ".txt"]'
       # Displaying output file contents
