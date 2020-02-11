@@ -13,7 +13,7 @@ jobs:
         with:
           CopyrightString: 'copyright check\n'
           FilePath: 'check'
-          FileType: [".py", ".txt"]
+          FileType: '.py, .txt'
       # Displaying output file contents
       - name: Display the path
         run: |
