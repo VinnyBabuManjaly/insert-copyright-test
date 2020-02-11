@@ -18,14 +18,14 @@ jobs:
       - name: Display the path
         run: |
           ls -all
-          cat test/test_file_b.txt
-          cat test/test_file_a.txt
+          cat check/test_file_b.txt
+          cat check/test_file_a.txt
         shell: bash
       - name: Commit and push files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add test/
+          git add .
           git commit -m "Add changes"
           git checkout -b test_branch_a
           git push origin test_branch_a
