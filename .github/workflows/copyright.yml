@@ -1,7 +1,7 @@
 name: Insert Copyright to required files
 on: [push]
 jobs:
-  lint:
+  build:
     name: Copyright
     runs-on: ubuntu-latest
     steps:
@@ -10,6 +10,10 @@ jobs:
       # Implementing action on repository
       - name: Runs action to insert copyright
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
+        with:
+          CopyrightString: 'copyright check\n'
+          FilePath: 'test'
+          FileType: '[".py", ".txt"]'
       # Displaying output file contents
       - name: Display the path
         run: |
