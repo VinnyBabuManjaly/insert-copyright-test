@@ -12,7 +12,7 @@ jobs:
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
         with:
           CopyrightString: '# Copyright check\nAll rights reserved (c) 2020 Mr.XYZ\n'
-          FilePath: 'test,check\a'
+          FilePath: 'test,check/a'
           FileType: '.py,.txt'
           IgnoreFilePath: 'tests'
       # Creates pull request with all changes in file
