@@ -12,8 +12,8 @@ jobs:
         uses: VinnyBabuManjaly/insert-copyright-action@test_branch
         with:
           CopyrightString: '# Copyright check\nAll rights reserved (c) 2020 Mr.XYZ\n'
-          FilePath: 'test,check'
-          FileType: '.py,.txt'
+          FileType: '.py, .txt'
+          FilePath: 'test/, check/'
       #    IgnoreFilePath: 'check/a'
       # Creates pull request with all changes in file
       - name: Create Pull Request
