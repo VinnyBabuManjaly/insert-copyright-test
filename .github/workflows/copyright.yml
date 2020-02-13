@@ -13,8 +13,8 @@ jobs:
         with:
           CopyrightString: '# Copyright check\nAll rights reserved (c) 2020 Mr.XYZ\n'
           FileType: '.py, .txt'
-      #    FilePath: 'check/a'
-          IgnoreFilePath: 'tests/, script/'
+          FilePath: 'check'
+          IgnoreFilePath: 'check/a'
       # Creates pull request with all changes in file
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
