@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       # Implementing action on repository
       - name: Runs action to insert copyright
-        uses: VinnyBabuManjaly/copyright-action@test_branch
+        uses: VinnyBabuManjaly/copyright-action@master
         with:
           CopyrightString: '# Copyright check\nAll rights reserved (c) 2020 Mr.XYZ\n'
           FileType: '.py, .txt'
