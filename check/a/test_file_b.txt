@@ -1,3 +1,5 @@
+# Copyright check
+All rights reserved (c) 2020
 copyright check
 copyright check
 this is a test
