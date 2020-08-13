@@ -11,7 +11,7 @@ jobs:
       - name: Runs action to insert copyright
         uses: VinnyBabuManjaly/copyright-action@v1.0.0
         with:
-          CopyrightString: '# Copyright check\nAll rights reserved (c) 2020 Mr.XYZ\n'
+          CopyrightString: '# Copyright check\nAll rights reserved (c) 2020\n'
           FileType: '.py, .txt'
           Path: 'check, test/'
           IgnorePath: 'script, tests, check/a/b/'
